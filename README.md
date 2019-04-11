@@ -1,12 +1,16 @@
 ## Ad-hoc Setup Python script
 
+Install following packages.
+
+`sudo apt-get install iperf htop`
+
 Clone the github project.
 
 `git clone  https://github.com/secinti/wifi-ad-hoc-setup`
 
 `cd wifi-ad-hoc-setup`
 
-#### ToDo List
+#### To Do List
 
 1. Get your wifi interface name. Run the following command in bash shell.
 
