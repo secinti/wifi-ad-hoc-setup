@@ -45,6 +45,7 @@ def configure_wifi_interface(configuration_options):
     """ Only work for ad-hoc network mode """
     if co.get('type') == 'ad-hoc':
         script = [
+            "sudo service network-manager stop",
             "sudo ifconfig %s down" % co.get('device_name'),
             "sudo ip addr flush dev %s" %co.get('device_name'),
             "sudo iw dev %s set type ibss" % co.get('device_name'),
