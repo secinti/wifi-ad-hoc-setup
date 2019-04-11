@@ -40,3 +40,23 @@ ERROR:2019-04-11 14:06:39,118::
 Unexpected interface configuration mode given !
 ERROR:2019-04-11 14:06:39,118::
 Unexpected interface configuration mode given !
+INFO:2019-04-11 14:54:38,826::
+2 interfaces are defined
+INFO:2019-04-11 14:54:38,828::
+Running: sudo ifconfig wlx000f55a91b12 down
+INFO:2019-04-11 14:54:39,340::
+Running: sudo ip addr flush dev wlx000f55a91b12
+INFO:2019-04-11 14:54:39,411::
+Running: sudo iw dev wlx000f55a91b12 set type ibss
+INFO:2019-04-11 14:54:39,446::
+Running: sudo rfkill unblock all
+INFO:2019-04-11 14:54:39,494::
+Running: sudo ifconfig wlx000f55a91b12 up
+INFO:2019-04-11 14:54:39,766::
+Running: sudo iw dev wlx000f55a91b12 ibss join ISE-19 2437 HT20 fixed-freq 02:12:34:56:78:9D
+INFO:2019-04-11 14:54:39,777::
+Running: sudo ip link set mtu 1500 dev wlx000f55a91b12
+INFO:2019-04-11 14:54:39,786::
+Running: sudo ifconfig wlx000f55a91b12 10.10.1.14/24
+ERROR:2019-04-11 14:54:39,809::
+Unexpected interface configuration mode given !
